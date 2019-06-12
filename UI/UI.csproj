@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6344673C-DB6F-413D-B3BE-A8B229A36A82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="NPOI">
+      <HintPath>..\lib\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>..\lib\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>..\lib\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>..\lib\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DishInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishInfoList.Designer.cs">
+      <DependentUpon>DishInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DishTypeInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DishTypeInfoList.Designer.cs">
+      <DependentUpon>DishTypeInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HallInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HallInfoList.Designer.cs">
+      <DependentUpon>HallInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManagerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManagerList.Designer.cs">
+      <DependentUpon>FormManagerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerLogin.Designer.cs">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberList.Designer.cs">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberTypeInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberTypeInfoList.Designer.cs">
+      <DependentUpon>MemberTypeInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderDishList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderDishList.Designer.cs">
+      <DependentUpon>OrderDishList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderInfoList.Designer.cs">
+      <DependentUpon>OrderInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderPay.Designer.cs">
+      <DependentUpon>OrderPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TableInfoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TableInfoList.Designer.cs">
+      <DependentUpon>TableInfoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DishInfoList.resx">
+      <DependentUpon>DishInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DishTypeInfoList.resx">
+      <DependentUpon>DishTypeInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManagerList.resx">
+      <DependentUpon>FormManagerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HallInfoList.resx">
+      <DependentUpon>HallInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerLogin.resx">
+      <DependentUpon>ManagerLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberList.resx">
+      <DependentUpon>MemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberTypeInfoList.resx">
+      <DependentUpon>MemberTypeInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderDishList.resx">
+      <DependentUpon>OrderDishList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderInfoList.resx">
+      <DependentUpon>OrderInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPay.resx">
+      <DependentUpon>OrderPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TableInfoList.resx">
+      <DependentUpon>TableInfoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{73143f64-cfe3-44ec-a48c-8b078a03dc04}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{19559eff-e49a-49eb-8a6a-6f1f6ca4ccd9}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{05c26f3a-d656-465b-a567-883ce73f3f26}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\loginback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\dish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\member.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\order.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\table.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
